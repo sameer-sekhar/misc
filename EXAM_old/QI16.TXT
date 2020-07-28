@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. If the digits of a wall clock are replaced <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwith alternate English alphabets as 1 by A , 2  by C<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspand so on then what will be the position of<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsphour hand at 8.30 ?<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q16" value="0">at Q<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q16" value="1">at O<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q16" value="2">between O and P<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q16" value="3">between O and Q
+</span>
+

@@ -1,0 +1,18 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. The value of y after executing <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp the code is :</span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint x = 0 ;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint y = 5 ;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if( x > 0 ) <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspy=2 ;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspy++ ;
+<br><br><br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q4" value="0">5<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q4" value="1">6<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q4" value="2">2<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q4" value="3">3
+</span>
+

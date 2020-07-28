@@ -1,0 +1,118 @@
+<html><head>
+<script language="JavaScript">
+var img_index=0;
+//var flag_p=0;
+//var a;
+Imageban=new Array("Samsnet.gif","rhlogo.gif","lycoslogo.gif","itklogo.gif","icicilogo.gif","ibmlogo.gif","brain_ad12.gif");
+function Main()
+{
+	setInterval("callidimage()",6000);
+}
+
+function callidimage()
+{	
+	ban.src=Imageban[img_index];
+	img_index++;
+	if(img_index>6){img_index=0;}
+//	a=setInterval("idimage()",100);
+}
+</script>
+
+</head>
+
+<body  topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" rightmargin="0" onload="Main()"  >
+
+<style type="text/css">
+<!--
+.effect { color:#000000;font-family:normal;font-size:13pt;filter:glow(color=white,strength=4);}
+-->
+</style>
+
+<script language="JavaScript">
+function hover(r)
+{
+	r.style.color="#bf313e";
+	r.style.filter="glow(color=orange,strength=1)";
+}
+
+function hoveroff(r)
+{
+	r.style.color="#000000";
+	r.style.filter="glow(color=#96c8c8,strength=4)";
+	
+}
+
+function hover1(r)
+{
+	r.style.color="#ff1111";
+//	r.style.filter="glow(color=orange,strength=1)";
+}
+
+function hoveroff1(r)
+{
+	r.style.color="#ffffff";
+//	r.style.filter="glow(color=#96c8c8,strength=4)";
+}
+
+</script>
+
+<table border=1 bordercolor="#64a8ae" bgcolor=white height="432">
+<tr>
+
+<td bgcolor=#000000 height=90>
+<img src="brain_logo12.gif" width ="143" height ="70" style="position:absolute;left:10;top:15;z-index:2;"></img>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\homepage.htm" target =_top 
+title="Back To Homeapage" style="color:white;font-size:11pt;" id=mnulnk1  onmouseover=hover1(mnulnk1) onmouseout=hoveroff1(mnulnk1) >Home</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href="http:\\127.0.0.1\exam\register.htm" target=_top 
+title="Registration form for New Users" style="color:white;font-size:11pt;" id=mnulnk2 onmouseover="hover1(mnulnk2)" onmouseout="hoveroff1(mnulnk2)">New Registration</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\help.htm" target =_top 
+title="Search your user id and registration number" style="color:white;font-size:11pt;" id=mnulnk3  onmouseover=hover1(mnulnk3) onmouseout=hoveroff1(mnulnk3) > Forget Password</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href="http:\\127.0.0.1\exam\marksheet.pl" target=_top 
+title="Click here to View the Results" style="color:white;font-size:11pt;" id=mnulnk4 onmouseover="hover1(mnulnk4)" onmouseout="hoveroff1(mnulnk4)">Result</A>
+</td></tr>
+
+<tr  bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\Aboutme.htm" target =_top 
+title="About the maker of the site" style="color:white;font-size:11pt;" id=mnulnk5  onmouseover=hover1(mnulnk5) onmouseout=hoveroff1(mnulnk5) >About Me</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\sample.htm" target =_top 
+title="Click here to see Sample questions" style="color:white;font-size:11pt;" id=mnulnk6  onmouseover=hover1(mnulnk6) onmouseout=hoveroff1(mnulnk6) > Sample</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\refreshment.htm" target =_top 
+title="Click here to get Refreshed" style="color:white;font-size:11pt;" id=mnulnk7  onmouseover=hover1(mnulnk7) onmouseout=hoveroff1(mnulnk7) >Refreshment</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\strategy.htm" target =_top 
+title="Click here to know the purpose of the site" style="color:white;font-size:11pt;" id=mnulnk8 onmouseover=hover1(mnulnk8) onmouseout=hoveroff1(mnulnk8) >Strategy</A>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\webmaster.htm" target =_top 
+title="Gateway for Web Master" style="color:white;font-size:11pt;" id=mnulnk9  onmouseover=hover1(mnulnk9) onmouseout=hoveroff1(mnulnk9) >Web Master</A>
+</td></tr>
+
+<tr  bgcolor=#000000><td height="85">
+<img id="ban" width="150" height="50" src="brain_ad12.gif"></img>
+</td></tr>
+
+</table>
+
+</body></html>
+

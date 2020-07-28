@@ -1,0 +1,36 @@
+@echo off
+dir %1 /b /s /a-d > all_file_list2.txt
+
+set x=%1
+
+REM Removing first & last character (double quotes)
+set x=%x:~1,-1%
+
+FOR /f %%a in ('"(echo.%%x:\=&echo.%%)|find /c /v """') DO set /a tok=%%a
+
+if %tok% gtr 1 For /f "tokens=%tok% delims=\" %%b in ("%x%") do set folder=%%b
+
+echo .OPTION EXPLICIT >> final2.ddf
+echo .Set CabinetNameTemplate=%folder%.zip >> final2.ddf
+echo .Set MaxDiskSize=CDROM >> final2.ddf
+echo .set DiskDirectoryTemplate= >> final2.ddf
+echo .set UniqueFiles="OFF" >> final2.ddf
+echo .set DiskDirectory1= >> final2.ddf
+echo .set Cabinet=on >> final2.ddf
+echo .set Compress=on >> final2.ddf
+
+For /f "tokens=* delims=" %%i in (all_file_list2.txt) do (
+
+call set strAbsolutePath=%%i
+REM call echo strAbsolutePath=======%%strAbsolutePath%%
+
+call set strRelativePath=%%strAbsolutePath:%x%\=%%
+REM call echo strRelativePath=======%%strRelativePath%%
+
+call DosZipper_1 \ "%%strRelativePath%%" "%%strAbsolutePath%%"
+
+)
+
+call makecab /v[3] /f final2.ddf
+
+del setup.inf setup.rpt all_file_list2.txt final2.ddf

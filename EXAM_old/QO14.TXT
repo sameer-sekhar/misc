@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. Character and date values are always <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp typed within </span>
+<br><br>
+
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q14" value="0">single quotes<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q14" value="1">double quotes<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q14" value="2">back quotes<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q14" value="3">none of these
+</span>
+

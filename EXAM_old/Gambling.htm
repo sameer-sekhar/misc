@@ -1,0 +1,167 @@
+<HTML><HEAD><TITLE>Game</TITLE>
+<script language="JavaScript">
+var i=0;
+var j=0;
+var k=51;
+var x=0;
+var r1,r2,r3,r4,r5;
+var a=0;
+var z=0;
+
+function entry(s1)
+{
+	var s="";
+	s=parseInt(s1.substring(1,s1.length));
+	i=i+1;
+	if(i>5)
+	{ alert("You have already chosen five numbers");
+	 i=5;
+	}
+	else
+	{
+	  switch(i)
+	  {
+		case 1:T1.value=s;break;
+		case 2:T2.value=s;break;
+		case 3:T3.value=s;break;
+		case 4:T4.value=s;break;
+		case 5:T5.value=s;break;
+	   }
+	}
+}
+
+function cleanchoice()
+{
+   if(z==0)
+   {
+	i=0;
+	T1.value="";
+	T2.value="";
+	T3.value="";
+	T4.value="";
+	T5.value="";
+    }
+}
+
+function play()
+{
+   
+	if(i<5)
+	{
+		alert("Your Five entries are not yet over");
+	}
+	else if(z==0)
+   
+	{
+		r1=Math.ceil(Math.random()*50);
+		r2=Math.ceil(Math.random()*50);
+		r3=Math.ceil(Math.random()*50);
+		r4=Math.ceil(Math.random()*50);
+		r5=Math.ceil(Math.random()*50);
+		a=setInterval("show()",50);
+		z=1;
+	}
+}
+
+function show()
+{
+	j=j+1;
+	k=k-1;
+	if(j<=r1)
+	{
+	    t1.value=j;
+	    if(j==r1)
+	    {
+		x=x+1;
+	     }
+	}
+	if(k>=r2)
+	{
+	    t2.value=k;
+	    if(k==r2)
+	    {
+		x=x+1;
+	     }
+	}
+	if(j<=r3)
+	{
+	    t3.value=j;
+	    if(j==r3)
+	    {
+		x=x+1;
+	     }
+	}
+	if(k>=r4)
+	{
+	    t4.value=k;
+	    if(k==r4)
+	    {
+		x=x+1;
+	     }
+	}
+	if(j<=r5)
+	{
+	    t5.value=j;
+	    if(j==r5)
+	    {
+		x=x+1;
+	     }
+	}
+	if(x==5)
+	{
+		result();
+		clearInterval(a);
+	}
+}
+
+function result()
+{
+	if((T1.value==r1)&&(T2.value==r2)&&(T3.value==r3)&&(T4.value==r4)&&(T5.value==r5))
+	{
+		alert("BINGO!You Have Won The JACKPOT");
+		
+	}
+	else if(((T1.value==r1)&&(T2.value==r2)&&(T3.value==r3)&&(T4.value==r4))||((T2.value==r2)&&(T3.value==r3)&&(T4.value==r4)&&(T5.value==r5)))
+{
+	alert("Wow! YOu have Won Yourself A Free Tour To Goa");
+}
+else if(((T1.value==r1)&&(T2.value==r2)&&(T3.value==r3))||((T2.value==r2))&&((T3.value==r3)&&(T4.value==r4))||((T3.value==r3)&&(T4.value==r4)&&(T5.value==r5)))
+{
+	alert("Congrats! You Have Won A Free Gift Worth Rs5000");
+}
+else
+{
+alert("Bad luck this time. But you have been registered for consolation prize s to be drawn later. Thanks!");
+}
+
+
+}
+</script>
+</HEAD>
+<BODY bgcolor="#ffddbb"><br><br><br><CENTER>
+<TABLE style="FONT-FAMILY: Comic Sans MS" cellPadding=2 width=400 border=1>
+<tr><td colspan=5>
+<INPUT type=text name=t1 size=6 style="align:center;font-size:20;height:50">
+<INPUT type=text name=t2 size=6 style="font-size:20;height:50">
+<INPUT type=text name=t3 size=6 style="font-size:20;height:50">
+<INPUT type=text name=t4 size=6 style="font-size:20;height:50">
+<INPUT type=text name=t5 size=6 style="font-size:20;height:50"></td></tr>
+  <TR><TD width=110><center><INPUT type=button value=" 1 " name=b1 onclick="entry(this.name)"><INPUT type=button value=11 name=b11 onclick="entry(this.name)"><INPUT type=button value=21 name=b21 onclick="entry(this.name)"><INPUT type=button value=31 name=b31 onclick="entry(this.name)"><INPUT type=button value=41 name=b41 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 2 " name=b2 onclick="entry(this.name)"><INPUT type=button value=12 name=b12 onclick="entry(this.name)"><INPUT type=button value=22 name=b22 onclick="entry(this.name)"><INPUT type=button value=32 name=b32 onclick="entry(this.name)"><INPUT type=button value=42 name=b42 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 3 " name=b3 onclick="entry(this.name)"><INPUT type=button value=13 name=b13 onclick="entry(this.name)"><INPUT type=button value=23 name=b23 onclick="entry(this.name)"><INPUT type=button value=33 name=b33 onclick="entry(this.name)"><INPUT type=button value=43 name=b43 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 4 " name=b4 onclick="entry(this.name)"><INPUT type=button value=14 name=b14 onclick="entry(this.name)"><INPUT type=button value=24 name=b24 onclick="entry(this.name)"><INPUT type=button value=34 name=b34 onclick="entry(this.name)"><INPUT type=button value=44 name=b44 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 5 " name=b5 onclick="entry(this.name)"><INPUT type=button value=15 name=b15 onclick="entry(this.name)"><INPUT type=button value=25 name=b25 onclick="entry(this.name)"><INPUT type=button value=35 name=b35 onclick="entry(this.name)"><INPUT type=button value=45 name=b45 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 6 " name=b6 onclick="entry(this.name)"><INPUT type=button value=16 name=b16 onclick="entry(this.name)"><INPUT type=button value=26 name=b26 onclick="entry(this.name)"><INPUT type=button value=36 name=b36 onclick="entry(this.name)"><INPUT type=button value=46 name=b46 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 7 " name=b7 onclick="entry(this.name)"><INPUT type=button value=17 name=b17 onclick="entry(this.name)"><INPUT type=button value=27 name=b27 onclick="entry(this.name)"><INPUT type=button value=37 name=b37 onclick="entry(this.name)"><INPUT type=button value=47 name=b47 onclick="entry(this.name)"><br>
+<INPUT type=button value=" 8 " name=b8 onclick="entry(this.name)"><INPUT type=button value=18 name=b18 onclick="entry(this.name)"><INPUT type=button value=28 name=b28 onclick="entry(this.name)"><INPUT type=button value=38 name=b38 onclick="entry(this.name)"><INPUT type=button value=48 name=b48 onClick="entry(this.name)"><br>
+<INPUT type=button value=" 9 " name=b9 onclick="entry(this.name)"><INPUT type=button value=19 name=b19 onclick="entry(this.name)"><INPUT type=button value=29 name=b29 onclick="entry(this.name)"><INPUT type=button value=39 name=b39 onclick="entry(this.name)"><INPUT type=button value=49 name=b49 onclick="entry(this.name)"><br>
+<INPUT type=button value=10 name=b10 onclick="entry(this.name)"><INPUT type=button value=20 name=b20 onclick="entry(this.name)"><INPUT type=button value=30 name=b30 onclick="entry(this.name)"><INPUT type=button value=40 name=b40 onclick="entry(this.name)" ><INPUT type=button value=50 name=b50 onclick="entry(this.name)"> 
+</center></TD>
+    <TD width=84><center>Make Your Bid</center><br>&nbsp&nbsp<INPUT style="WIDTH: 60px; HEIGHT: 130px;color=green;font-weight:50" type=button value=PLAY name=Submit onclick="play()"> 
+     <P>&nbsp;</P></TD>
+    <TD width=170><center>Your Choices are ----</center><br><INPUT name=T1 type=text size=3><INPUT type=text name=T2 size=3><INPUT 
+      name=T3 type=text size=3><INPUT name=T4 type=text size=3><INPUT type=text name=T5 size=3>
+ <p>&nbsp</p>     <P><center>Clear Choice----</center><br><INPUT style="WIDTH: 170; POSITION: absolute; HEIGHT: 30px;color:red" type=button value=CLEAR name=CLEAR onclick="cleanchoice()"></P></TD></TR></TBODY></TABLE>
+</CENTER>
+</BODY>
+</HTML>

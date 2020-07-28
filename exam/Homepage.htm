@@ -1,0 +1,319 @@
+<html>
+<head>
+
+<script language="JavaScript">
+var img_index=0;
+//var flag_p=0;
+//var a;
+Imageban=new Array("Samsnet.gif","rhlogo.gif","lycoslogo.gif","itklogo.gif","icicilogo.gif","ibmlogo.gif","brain_ad12.gif");
+function Main()
+{
+	setInterval("callidimage()",6000);
+}
+
+function callidimage()
+{	
+	ban.src=Imageban[img_index];
+	img_index++;
+	if(img_index>6){img_index=0;}
+//	a=setInterval("idimage()",100);
+}
+</script>
+
+<script language="JScript">
+
+function update_hitcounter()
+{
+	var f,text,obj,tristate=0,forReading=1,forWriting=2,hitcount=1;
+	obj=new ActiveXObject("Scripting.FileSystemObject");
+	if(!obj.FileExists("C:\\apache\\Apache\\exam\\hitcounter.txt"))
+	{
+		obj.CreateTextFile("C:\\apache\\Apache\\exam\\hitcounter.txt");
+		f=obj.GetFile("C:\\apache\\Apache\\exam\\hitcounter.txt");
+		text=f.OpenAsTextStream(forWriting,tristate);
+		text.write(hitcount);
+	}
+	else
+	{
+		f=obj.GetFile("C:\\apache\\Apache\\exam\\hitcounter.txt");
+		text=f.OpenAsTextStream(forReading,tristate);
+		hitcount=parseInt(text.readline());
+		text.Close();
+		hitcount++;
+		text=f.OpenAsTextStream(forWriting,tristate);
+		text.write(hitcount);
+	}
+	text.Close();
+}
+
+</script>
+
+</head>
+
+<body  topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" rightmargin="0" onload="Main(),update_hitcounter();"  >
+
+<style type="text/css">
+<!--
+.effect { color:#000000;font-family:normal;font-size:13pt;filter:glow(color=white,strength=4);}
+-->
+</style>
+
+<script language="JavaScript">
+function hover(r)
+{
+	r.style.color="#bf313e";
+	r.style.filter="glow(color=#cfffcf,strength=4)";
+}
+
+function hoveroff(r)
+{
+	r.style.color="#000000";
+	r.style.filter="glow(color=#96c8c8,strength=4)";
+}
+
+function hover1(r)
+{
+	r.style.color="#cfffcf";
+//	r.style.filter="glow(color=orange,strength=1)";
+}
+
+function hoveroff1(r)
+{
+	r.style.color="#ffffff";
+//	r.style.filter="glow(color=#96c8c8,strength=4)";
+}
+
+</script>
+
+
+<script language="JavaScript">
+
+if (document.all)
+{
+	msg= new Array("B","R","A","I","N","W","O","R","L","D",".","C","O","M");
+	document.write('<div id="starsDiv" style="position:absolute;top:0px;left:0px">')
+	for (xy=0;xy<14;xy++)
+	{
+				document.write('<div style="position:relative; width:6px; height:6px; 				font-size:10px;color:red;visibility:visible">');
+		document.write(msg[xy]);
+		document.write('</div>');
+	}
+	document.write('</div>')
+}
+
+if (document.layers)
+{
+	window.captureEvents(Event.MOUSEMOVE);
+}
+
+var yBase = 200;
+var xBase = 200;
+var yAmpl = 10;
+var yMax = 40;
+var step = .2;
+var ystep = .5;
+var currStep = 0;
+var tAmpl=1;
+var Xpos = 1;
+var Ypos = 1;
+var i = 0;
+var j = 0;
+
+if (document.all)
+{
+           function MoveHandler()
+            {
+	  Xpos = document.body.scrollLeft+event.x;
+	  Ypos = document.body.scrollTop+event.y;
+            }
+         document.onmousemove = MoveHandler; 
+}
+else if (document.layers)
+{
+	  function xMoveHandler(evnt)
+	{
+		  Xpos = evnt.pageX;
+		  Ypos = evnt.pageY;
+	  }
+	  window.onMouseMove = xMoveHandler;
+}
+
+
+function animateLogo() 
+{
+	if (document.all)
+	{
+		 yBase = window.document.body.offsetHeight/4;
+		 xBase = window.document.body.offsetWidth/4;
+	}
+	else if (document.layers)
+	{
+		 yBase = window.innerHeight/4 ;
+		 xBase = window.innerWidth/4;
+	}
+
+	if (document.all)
+	{
+		var totaldivs=document.all.starsDiv.all.length
+		 for ( i = 0 ; i < totaldivs ; i++ )
+		 {
+			var tempdiv=document.all.starsDiv.all[i].style
+			  tempdiv.top = Ypos + Math.cos((20*Math.sin(currStep/20))+i*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10);
+			  tempdiv.left = Xpos + Math.sin((20*Math.sin(currStep/20))+i*70)*xBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10);
+		 }
+	}
+	else if (document.layers)
+	{
+		 for ( j = 0 ; j < 7 ; j++ ) 
+		 {
+			var templayer="a"+j
+			  document.layers[templayer].top = Ypos + Math.cos((20*Math.sin(currStep/20))+j*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+			  document.layers[templayer].left =Xpos + Math.sin((20*Math.sin(currStep/20))+j*70)*xBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+		 }
+	}
+
+	currStep += step;
+	setTimeout("animateLogo()", 15);
+}
+
+animateLogo();
+
+</script>
+
+<script language="JavaScript">
+TMonth = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+  TDay = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+  TDate = new Date();
+  CurDay = TDate.getDay();
+  CurMonth = TDate.getMonth();
+  Month = TMonth[CurMonth];
+  Day = TDay[CurDay];
+  NDay = TDate.getDate();
+  CurYear = TDate.getYear();
+  Year = "" + CurYear;
+
+
+</script>     
+
+
+<table border=1 bordercolor="#64a8ae" bgcolor=white height="425">
+<tr>
+
+<comment>******************************
+
+<td bgcolor=#8278ae>spider leg color
+
+*****************************</comment>
+
+<td bgcolor=#000000 height=105>
+<img src="brain_logo12.gif" width ="143" height ="70" style="position:absolute;left:10;top:20;z-index:2;"></img>
+</td></tr>
+
+<tr  bgcolor=#000000><td style="color:white;font-size:10pt; height:110;"><form method=post action="http:\\127.0.0.1\exam\login1.pl">
+ &nbsp;User id &nbsp;&nbsp;&nbsp<input type="text"  name="uid" value="" size="10" style="background:#96c8c8;height:18">
+<br>
+ &nbsp;Reg No &nbsp;&nbsp;<input type="password" name="rno" value="" size="10"  style="background:#96c8c8;height:18;">
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input style="WIDTH: 50; POSITION: absolute; HEIGHT: 18px;background:#64a8ae;color:black;font-size:7pt" type="reset" name="reset" value="Cancel" title="Reset the fileds">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="WIDTH:50; POSITION: absolute; HEIGHT: 18px;background:#64a8ae;color:black;font-size:7pt" type="submit" value="Login" title="Go for Examination"> </form></td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp;
+<A href="http:\\127.0.0.1\exam\help.htm" target =_top 
+title="Search your user id and registration number" style="color:white;font-size:11pt;" id=mnulnk1  onmouseover=hover1(mnulnk1) onmouseout=hoveroff1(mnulnk1) > Forget Password</A><br>
+</td></tr>
+
+<tr bgcolor=#000000><td>&nbsp;&nbsp;&nbsp;&nbsp; <A 
+href="http:\\127.0.0.1\exam\register.htm" target=_top 
+title="Registration form for New Users" style="color:white;font-size:11pt;" id=mnulnk2 onmouseover="hover1(mnulnk2)" onmouseout="hoveroff1(mnulnk2)">New Registration</A>
+</td></tr>
+
+<tr  bgcolor=#000000><td>
+<img id="ban" width="150" height="50" src="brain_ad12.gif"></img>
+</td></tr>
+
+</table>
+
+<div style="position:absolute;top:-20;left:550;z-index:-1;"><img src="brainworld3.gif" width=220 height=100></div>
+
+<div style="position:absolute;top:39;left:557"> <hr color="maroon" width ="130" size = "2"></div>
+
+<div style="position:absolute;left:175;top:10;"><table  border=0 bgcolor=white>
+ <tr align="right"> 
+    <td height="2"><font style="color:#64a8ae;font-size:8pt;" face="MS Sans Serif, Arial, Verdana"> 
+      <script language="JavaScript">
+  document.write(Day);
+  document.write(", ");
+  document.write(Month);
+  document.write(" ");
+  document.write(NDay);
+  document.write(", ");
+  document.write(Year);
+
+</script>
+      &nbsp; </font></td>
+  </tr>
+</table></div>
+
+<div style="position:absolute;top:70;left:215;z-index:-1;"><img src="spider2.gif" width=370 height=250></div>
+
+<div id="r8" style="position:absolute;top:110;left:600;color:black;font-family:normal;font-size:7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r8)" onmouseout="hoveroff(r8)"><a href="register.htm" title="Registration form for new users"><font color="black">REGISTRATION</font></a></div>
+
+<div id="r7" style="position:absolute;top:160;left:600;color:black;font-family:normal;font-size:7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r7)" onmouseout="hoveroff(r7)"><a href="http:\\127.0.0.1\exam\marksheet.pl"   title="Click here to view Results"><font color="black">RESULT</a></div>
+
+<div id="r6" style="position:absolute;top:220;left:600;color:black;font-family:normal;font-size:7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r6)" onmouseout="hoveroff(r6)"><a href="help.htm"  title="Search your user id and registration number"><font color="black">FORGET PASSWORD</a></div>
+
+<div id="r5" style="position:absolute;top:70;left:207;color:black;font-family:normal;font-size :7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r5)" onmouseout="hoveroff(r5)"><a href="aboutme.htm" title="Click here to know about the maker of the site"><font color="black">ABOUT ME</a></div>
+
+<div id="r4" style="position:absolute;top:290;left:600;color:black;font-family:normal;font-size:7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r4)" onmouseout="hoveroff(r4)"><a href="sample.htm" title="Click here for sample test" ><font color="black">SAMPLE QUESTIONS</a></div>
+
+<div id="r3" style="position:absolute;top:325;left:480;color:black;font-family:normal;font-size:7pt;letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);"    onmouseover="hover(r3)" onmouseout="hoveroff(r3)"><a href="strategy.htm" title="Click here to know about the purpose of the site"><font color="black">STRATEGY</a></div>
+
+<div  id="r2" style="position:absolute;top:180;left:200;color:black;font-family:normal;letter-spacing:2pt;font-size:7pt; filter:glow(color=#96c8c8,strength=4);" onmouseover="hover(r2)" onmouseout="hoveroff(r2)"><a href="webmaster.htm" title="Gateway for Site Administrator"><font color="black">WEB MASTER</a></div>
+
+<div id="r1" style="position:absolute;top:325;left:290;color:black;font-family:normal;font-size:7pt; letter-spacing:2pt;filter:glow(color=#96c8c8,strength=4);"  onmouseover="hover(r1)" onmouseout="hoveroff(r1)"><a href="refreshment.htm" title="Click here to get Refreshed"><font color="black">REFRESHMENT</a></div>
+
+
+<comment>****************************************************************
+<div style="position:absolute;top:380;left:200">
+<table  border=1 frame=void bgcolor="white">
+<tr>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="register1.htm"><font size="2pt">New Registration</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="help1.htm"><font size="2pt">Forget Password</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="tips.htm"><font size="2pt">Exam Tips</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="strategy.htm"><font size="2pt">Strategy</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=0 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="marksheet.pl"><font size="2pt">Result</font></a>&nbsp;&nbsp;&nbsp;</td>
+</tr></table></div>
+
+<div style="position:absolute;top:405;left:300">
+<table  border=1 frame=void bgcolor="white">
+<tr>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="aboutus.htm"><font size="2pt">About Us</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="webmaster.htm"><font size="2pt">Webmaster</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=0 frame=rhs>&nbsp;&nbsp;&nbsp;<a href="refreshment.htm"><font size="2pt">Refreshment</font></a>&nbsp;&nbsp;&nbsp;</td>
+
+</tr></table></div>
+
+
+<div  style="position=absolute;top:430;left:150;"> <font face="arial" size="1" color=#a93311><center><b> This site is best viewed in Internet Explorer 4.0+ with a screen resolution of 800x600 and above. </b></center></font> </div>
+<div style="position=absolute;top:422;">
+<hr>
+<p><h5><font color=#a93311><center>Copyright : BRAINWORLD International<sup style= "font-size:15pt">&copy;</sup><bR>#80, 3rd cross, 5th block, koramangala layout<BR>Bangalore, Karnataka<br>INDIA</center></font></h5></div>
+
+*****************************************************</comment>  
+
+
+<div style="position:absolute;top:320;left:675;z-index:-2;"><img src="cartoon.bmp" width=95 height=105></div>
+
+	
+ <comment>*****************************************
+
+<marquee CLASS="effect" loop="-1" scrolldelay="20" style="position:absolute;top:380;left:180;width:510;color:brown;">Welcome to www.BRAINWORLD.com          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  The complete Educational portal..... </marquee> 
+*******************************************</comment>
+
+<marquee CLASS="effect" loop="-1" scrolldelay="100" style="position:absolute;top:365;left:180;width:510;color:brown;"><img src="BrainLogo.bmp" width="350"  height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="redhatbanner.gif" width="350"  height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="itknowledgebanner.gif" width="350"  height="50"></marquee>
+</BODY></html>

@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. What was the capital of india<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspat the start of the last century(20TH)<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q2" value="0">Delhi<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q2" value="1">Calcutta<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q2" value="2">Bombay<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q2" value="3">none of the above
+</span>
+

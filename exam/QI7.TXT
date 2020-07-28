@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..Which cricketer has scored<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcentury on his debut in<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRanji trophy and Irani Trophy</span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q7" value="0">S.Gavaskar<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q7" value="1">V.Kambli<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q7" value="2">S.Tendulkar<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q7" value="3">none of the above
+</span>
+

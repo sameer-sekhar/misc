@@ -1,0 +1,17 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..  The value of Y after executing the<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp following program segment is :</span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat  a = 5 ;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat b = 2 ; <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspfloat Y ;<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspY=a % b;<br><br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q2" value="0">0.0<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q2" value="1">2.0<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q2" value="2">1.0<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q2" value="3">2.5
+</span>
+

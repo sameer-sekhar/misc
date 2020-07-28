@@ -1,0 +1,8 @@
+register_users	(registration)
+login1		(appearign for Examination)
+find		(searching for user id and password)
+read		(generation of question paper)
+try_marks		(evaluation of marks)
+result		(generation of certificate)
+marksheet	(marksheet display for all users)
+webmasterlogin	(login file for webmaster)

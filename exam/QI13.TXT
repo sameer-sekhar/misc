@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. During the reign of which of the<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp following emperors was India's first<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcurrency note printed ?</span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q13" value="0">Akbar<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q13" value="1">Humayun<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q13" value="2">Sher Shah Suri<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q13" value="3">Samudra Gupta
+</span>
+

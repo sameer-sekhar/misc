@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. Three of the following four are alike in a <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcertain way and hence from a group . Which one<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspof the following does not belongs to that group ?<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q15" value="0">GKM<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q15" value="1">SWY<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q15" value="2">PTV<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q15" value="3">FIL
+</span>
+

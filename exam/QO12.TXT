@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. The clause used to specify a condition to<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp retrieve rows of a table is <br></span>
+<br><br>
+
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q12" value="0">Where<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q12" value="1">Having<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q12" value="2">Group By<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q12" value="3">Order By
+</span>
+

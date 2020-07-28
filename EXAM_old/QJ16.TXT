@@ -1,0 +1,17 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..  Check box generates both __________ and <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ________ everytime .<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  </span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q16" value="0">change evevt , item event <br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q16" value="1">item event , action event<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q16" value="2">action event , change event<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q16" value="3">none of the above
+</span>
+

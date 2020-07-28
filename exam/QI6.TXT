@@ -1,0 +1,18 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. When does a fiscal year<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspstarts</span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q6" value="0">1<sup>st</sup
+>April<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q6" value="1">1<sup>st</sup
+>July<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q6" value="2">1<sup>st</sup
+>January<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q6" value="3">none of the above
+</span>
+

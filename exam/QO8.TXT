@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..  ___________  helps the user to manage the error<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp conditions in the applications by specifing user-defined<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp error numbers and messages .<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q8" value="0">Show errors<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q8" value="1">Raise_Application_error<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q8" value="2">Execute<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q8" value="3">none
+</span>
+

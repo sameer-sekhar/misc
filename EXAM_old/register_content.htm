@@ -1,0 +1,87 @@
+<html>
+<head>
+
+<script language = "JavaScript">
+var flag=0;
+
+function h()
+{
+	document.location.replace("homepage.htm");
+	document.location.target="_top";
+}
+
+function chek()
+{
+	var u="";
+	el=document.forms[0].elements.length;
+	for(j=0;j<el;j++)
+	{
+		u=document.forms[0].elements[j].value;
+		l_u=u.length;
+		for(i=0;i<l_u;i++)
+		{
+			if((u.substring(i,i+1)=="%") || (u.substring(i,i+1)=="?") || 							(u.substring(i,i+1)=="+") || (u.substring(i,i+1)=="~") || 										(u.substring(i,i+1)==";") || (u.substring(i,i+1)=="*") || 							(u.substring(i,i+1)=="#") || (u.substring(i,i+1)=="\""))
+			{
+				flag=1;
+				document.forms[0].elements[j].value="";
+				u="";
+			}
+		}
+	}
+	if(!flag)
+	{
+		document.forms[0].submit();
+	}
+	else
+	{
+		alert("Your entry contains certain characters that are not allowed. Please Refresh the form.");
+	}
+}
+
+</script> 
+</head>
+
+<body>
+
+<div style="position:absolute;left:15;top:10;">
+<form action="http:\\127.0.0.1\exam\register_users.pl" method="post">
+<b>
+<table border=0>
+
+<tr><td>User_Id</td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><input type=text  name="u_id" size=15 maxlength=40 style="HEIGHT: 20px;background:#64a8ae;color:black;font-size:7pt"></td></tr>
+<tr><td>Name</td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><input type=text  name="nam" size=15 maxlength=40  style="HEIGHT: 20px;background:#64a8ae;color:black;font-size:7pt"></td></tr>
+
+<tr><td>Subject</td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><select name="sub" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt">
+<option value="iq" selected>IQ Test</option>
+<option value="java">Java</option>
+<option value="oracle">Oracle</option>
+</select></td></tr>
+
+<tr><td>E-mail</td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><input type=text  name="e_id" size=15  maxlength=40  style="HEIGHT: 20px;background:#64a8ae;color:black;font-size:7pt"></td></tr>
+
+<tr><td>Mailing Address</td>
+<td>&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp</td><td><input type=text  name="m_add" size=15 maxlength=75  style="HEIGHT: 20px;background:#64a8ae;color:black;font-size:7pt"></td></tr>
+</table></form>
+</div>
+
+<div style="position:absolute;top:150;left:145;">
+<center>
+TERMS AND CONDITIONS&nbsp&nbsp&nbsp&nbsp&nbsp</center><br>1. One registration is valid for only one examination <br>2. The result/certificate will be mailed at your mailing address.<br>3. Please fill the form as per the given instructions.
+</center>
+</div>
+
+<div style="position:absolute;top:270;left:80;"><a href="homepage.htm" target="_top" title="Back To HomePage" style="color:#64a8ae;font-size:12pt;">DisAgree</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type=button value=Agree onClick="chek()" title="Click to Register" style="background:#64a8ae;color:white;font-size:8pt">
+</div>
+
+
+<div style="position:absolute;top:7;left:345;">
+<table border=1 frame=box bordercolor="#64a8ae" bgcolor=white height="120" width="220" cellpadding="10"><tr><td>Please do not use characters like (; " / ? < > \ % + & ^ # * ! ~ | ') while filling  the form. These characters may disrupt the functioning. Thanks!</td></tr></table>
+</div>
+
+</BODY></html>

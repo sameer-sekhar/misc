@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..  _______________  is a modal window that displays<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp a message notifying the user of some application <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp conditions .<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q7" value="0">Layout editor<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q7" value="1">Properties window<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q7" value="2">Alert<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q7" value="3">PL/SQL editor
+</span>
+

@@ -1,0 +1,39 @@
+<html>
+<body bgcolor="#ffffff">
+
+<script language="JavaScript">
+TMonth = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+  TDay = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+  TDate = new Date();
+  CurDay = TDate.getDay();
+  CurMonth = TDate.getMonth();
+  Month = TMonth[CurMonth];
+  Day = TDay[CurDay];
+  NDay = TDate.getDate();
+  CurYear = TDate.getYear();
+  Year = "" + CurYear;
+
+
+</script>     
+<div style="position:absolute;top:-20;left:412;z-index:-1;"><img src="brainworld3.gif" width=220 height=100></div>
+
+<div style="position:absolute;top:39;left:420"> <hr color="maroon" width ="130" size = "2"></div>
+
+<div style="position:absolute;left:15;top:10;"><table  border=0 bgcolor=white>
+ <tr align="right"> 
+    <td height="2"><font style="color:#64a8ae;font-size:8pt;" face="MS Sans Serif, Arial, Verdana"> 
+      <script language="JavaScript">
+  document.write(Day);
+  document.write(", ");
+  document.write(Month);
+  document.write(" ");
+  document.write(NDay);
+  document.write(", ");
+  document.write(Year);
+
+</script>
+      &nbsp; </font></td>
+  </tr>
+</table></div>
+</body>
+</html>

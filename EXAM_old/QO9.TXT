@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. The data dictionary view used to display all<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp tables , views , synonyms and sequence for which<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp user is the owner .<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q9" value="0">All_Users<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q9" value="1">User_Constraints<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q9" value="2">User_Cons_Columns<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q9" value="3">User_catalog
+</span>
+

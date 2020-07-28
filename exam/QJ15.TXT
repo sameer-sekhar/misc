@@ -1,0 +1,17 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+..  Variables declared outside the method definitions<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp are called ________ while the variables defined<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwithin the method are called ________ variables .  </span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q15" value="0">instance , global <br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q15" value="1">global , local<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q15" value="2">instance, local<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q15" value="3">local , instance
+</span>
+

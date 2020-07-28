@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. When a class 'B' is declared to be friend<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspof class 'A' then , the members of class<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA ( private  and  public ) are _____________<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp to class B .<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q1" value="0">not accessible<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q1" value="1">accessible<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q1" value="2">sometimes accessible<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q1" value="3">none of the above
+</span>
+

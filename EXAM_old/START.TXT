@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Question Paper</title>
+
+<script language="javascript">
+
+var m=0;
+var x=3;
+var y=0;
+var msg="                              time left(minutes):-     ";
+
+function showtime() 
+{
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  
+  var timeValue = "" + ((hours >12) ? hours -12 :hours);
+  timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+  timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+  timeValue += (hours >= 12) ? " P.M." : " A.M.";
+  y++;
+  if(y==60)
+	{
+		y=0;
+		x--;
+		if(x==0)
+		{
+			clearTimeout();
+			alert("Time ends");
+			document.forms[0].submit();
+		}
+	}
+  window.status = timeValue + msg + x;
+  timerID = setTimeout("showtime()",1000);
+}
+ 
+function star()
+{
+	alert("Please do not refresh this page. If you would do so the question paper will get submitted.");
+	showtime();
+}
+
+function sub()
+{
+	document.forms[0].submit();
+}
+
+function newwind()
+{
+	a=window.open("instruction.htm","instwin","toolbar=no,menubar=no,statusbar=no,height=400,width=360,resizeable=no,dependent=yes");
+}
+
+</script>
+</head>
+
+<body ondblclick="newwind()" onLoad="star()" onunload="sub()">

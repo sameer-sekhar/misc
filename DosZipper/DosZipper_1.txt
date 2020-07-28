@@ -1,0 +1,33 @@
+@echo off
+SETLOCAL ENABLEDELAYEDEXPANSION
+
+set fName=%3
+REM Removing first & last character (double quotes) from the 'fName' 
+set fName=%fName:~1,-1%
+
+set haystack=%2
+
+REM Removing first & last character (double quotes) from the 'haystack' 
+set haystack=%haystack:~1,-1%
+
+set /a ret=0
+FOR /f %%a in ('"(echo.%%haystack:%~1=&echo.%%)|find /c /v """') DO set /a ret=%%a-1 && set /a tok=%%a
+
+if %ret% gtr 0 For /f "tokens=%tok% delims=%~1" %%i in ("%haystack%") do set strFname=%%i
+
+REM echo strFname------------%strFname%
+
+if %ret% gtr 0 ( set length=0
+:loop
+if defined strFname (set strFname=%strFname:~1%&set /A length += 1&goto loop)
+
+call Set folder=%%haystack:~0,-%length%%%
+
+echo .Set DestinationDir=%folder% >> final2.ddf
+
+)
+
+echo "%fName%" >> final2.ddf 
+
+exit /b
+

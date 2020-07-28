@@ -1,0 +1,413 @@
+<html>
+<head>
+<style type="text/css">
+<!--
+a:link{color:red;}
+a:alink{color:blue;}
+a:vlink{color:black;}
+-->
+</style>
+
+<script language="javascript">
+var p=0;
+var q=0;
+var i=0;
+var a=0;
+var b=0;
+var m=0;
+var n=0;
+
+function moveheart()
+ {
+	setInterval("movement()",200);
+}
+
+function movement()
+{
+	if(parseInt(divheart1.style.top)+10>1400)
+		p=0;
+	else if(parseInt(divheart1.style.top)-10<0)
+		p=1;
+
+	if (parseInt(divheart1.style.left)+10>600)
+		q=0;
+	else if(parseInt(divheart1.style.left)-10<0)
+		q=1;
+	
+	if(p==0)
+		divheart1.style.top=parseInt(divheart1.style.top)-10;
+	else 
+		divheart1.style.top=parseInt(divheart1.style.top)+10;
+
+	if(q==0)
+		divheart1.style.left=parseInt(divheart1.style.left)-10;
+	else 
+		divheart1.style.left=parseInt(divheart1.style.left)+10;
+
+
+
+	if(parseInt(divheart2.style.top)+10>1400)
+		m=0;
+	else if(parseInt(divheart2.style.top)-10<0)
+		m=1;
+
+	if (parseInt(divheart2.style.left)+10>600)
+		n=0;
+	else if(parseInt(divheart2.style.left)-10<0)
+		n=1;
+	
+	if(m==0)
+		divheart2.style.top=parseInt(divheart2.style.top)-10;
+	else 
+		divheart2.style.top=parseInt(divheart2.style.top)+10;
+
+	if(n==0)
+		divheart2.style.left=parseInt(divheart2.style.left)-10;
+	else 
+		divheart2.style.left=parseInt(divheart2.style.left)+10;
+
+
+
+	if(parseInt(divheart3.style.top)+10>1400)
+		a=0;
+	else if(parseInt(divheart3.style.top)-10<0)
+		a=1;
+
+	if (parseInt(divheart3.style.left)+10>600)
+		b=0;
+	else if(parseInt(divheart3.style.left)-10<0)
+		b=1;
+	
+	if(a==0)
+		divheart3.style.top=parseInt(divheart3.style.top)-10;
+	else 
+		divheart3.style.top=parseInt(divheart3.style.top)+10;
+
+	if(b==0)
+		divheart3.style.left=parseInt(divheart3.style.left)-10;
+	else 
+		divheart3.style.left=parseInt(divheart3.style.left)+10;
+
+	
+	if(parseInt(divheart4.style.top)+10>1400)
+		p=0;
+	else if(parseInt(divheart4.style.top)-10<0)
+		p=1;
+
+	if (parseInt(divheart4.style.left)+10>600)
+		q=0;
+	else if(parseInt(divheart4.style.left)-10<0)
+		q=1;
+	
+	if(p==0)
+		divheart4.style.top=parseInt(divheart4.style.top)-10;
+	else 
+		divheart4.style.top=parseInt(divheart4.style.top)+10;
+
+	if(q==0)
+		divheart4.style.left=parseInt(divheart4.style.left)-10;
+	else 
+		divheart4.style.left=parseInt(divheart4.style.left)+10;
+
+	
+	if(parseInt(divheart5.style.top)+10>1400)
+		m=0;
+	else if(parseInt(divheart5.style.top)-10<0)
+		m=1;
+
+	if (parseInt(divheart5.style.left)+10>600)
+		n=0;
+	else if(parseInt(divheart5.style.left)-10<0)
+		n=1;
+	
+	if(m==0)
+		divheart5.style.top=parseInt(divheart5.style.top)-10;
+	else 
+		divheart5.style.top=parseInt(divheart5.style.top)+10;
+
+	if(n==0)
+		divheart5.style.left=parseInt(divheart5.style.left)-10;
+	else 
+		divheart5.style.left=parseInt(divheart5.style.left)+10;
+
+
+	if(parseInt(divheart6.style.top)+10>1400)
+		p=0;
+	else if(parseInt(divheart6.style.top)-10<0)
+		q=1;
+
+	if (parseInt(divheart6.style.left)+10>600)
+		p=0;
+	else if(parseInt(divheart6.style.left)-10<0)
+		q=1;
+	
+	if(q==0)
+		divheart6.style.top=parseInt(divheart6.style.top)-10;
+	else 
+		divheart6.style.top=parseInt(divheart6.style.top)+10;
+
+	if(p==0)
+		divheart6.style.left=parseInt(divheart6.style.left)-10;
+	else 
+		divheart6.style.left=parseInt(divheart6.style.left)+10;
+
+
+
+	if(parseInt(divheart7.style.top)+10>1400)
+		a=0;
+	else if(parseInt(divheart7.style.top)-10<0)
+		a=1;
+
+	if (parseInt(divheart7.style.left)+10>600)
+		b=0;
+	else if(parseInt(divheart7.style.left)-10<0)
+		b=1;
+	
+	if(a==0)
+		divheart7.style.top=parseInt(divheart7.style.top)-10;
+	else 
+		divheart7.style.top=parseInt(divheart7.style.top)+10;
+
+	if(b==0)
+		divheart7.style.left=parseInt(divheart7.style.left)-10;
+	else 
+		divheart7.style.left=parseInt(divheart7.style.left)+10;
+
+
+
+	if(parseInt(divheart8.style.top)+10>1400)
+		m=0;
+	else if(parseInt(divheart8.style.top)-10<0)
+		m=1;
+
+	if (parseInt(divheart8.style.left)+10>600)
+		n=0;
+	else if(parseInt(divheart8.style.left)-10<0)
+		n=1;
+	
+	if(m==0)
+		divheart8.style.top=parseInt(divheart8.style.top)-10;
+	else 
+		divheart8.style.top=parseInt(divheart8.style.top)+10;
+
+	if(n==0)
+		divheart8.style.left=parseInt(divheart8.style.left)-10;
+	else 
+		divheart8.style.left=parseInt(divheart8.style.left)+10;
+
+
+
+	if(parseInt(divheart9.style.top)+10>1400)
+		p=0;
+	else if(parseInt(divheart9.style.top)-10<0)
+		q=1;
+
+	if (parseInt(divheart9.style.left)+10>600)
+		q=0;
+	else if(parseInt(divheart9.style.left)-10<0)
+		p=1;
+	
+	if(p==0)
+		divheart9.style.top=parseInt(divheart9.style.top)-10;
+	else 
+		divheart9.style.top=parseInt(divheart9.style.top)+10;
+
+	if(q==0)
+		divheart9.style.left=parseInt(divheart9.style.left)-10;
+	else 
+		divheart9.style.left=parseInt(divheart9.style.left)+10;
+}
+
+
+
+function flame(f)
+{
+var p=f.name1.value.toUpperCase();
+var q=f.name2.value.toUpperCase();
+var str="";
+n1=new Array(50);
+n2=new Array(50);
+n3=new Array(50);
+var x=0;
+var k=0;
+var l=0;
+for(i=0;i<p.length;i++)
+{
+   if(x==0)
+    {
+	for(j=0;j<q.length;j++)
+	{
+	  n2[j]=q.substring(j,j+1);
+	}
+	x=1;
+    }
+    n1[i]=p.substring(i,i+1);
+}
+
+for(i=0;i<p.length;i++)
+{
+	for(j=0;j<q.length;j++)
+	{
+	  if(n1[i]==n2[j])
+	   {
+		n3[k]=n1[i];
+		k=k+1;
+	   }
+	}
+}
+
+l=k;
+
+for(i=0;i<k;i++)
+{
+	for(j=i+1;j<k;j++)
+	{
+	    if(n3[i]==" "){break;}
+	    else{
+		if(n3[i]==n3[j])
+		    {
+			n3[j]=" ";l=l-1;
+		    }
+		}
+	}
+}
+ 
+if (l==0){f.name3.value="no common behaviours found";}
+else if (l==1||l==11||l==14||l==24){f.name3.value="flame says that there may be enimity between the two";}
+else if (l==2||l==12||l==16||l==20){f.name3.value="flame says that the two adore each other";}
+else if (l==3||l==6||l==7||l==10||l==17||l==21||l==25){f.name3.value="flame says that there is a good chance of marriage between the two";}
+else if (l==4||l==8||l==15||l==18||l==19||l==22){f.name3.value="flame says that the two can be nice friends";}
+else {f.name3.value="flame says that love is in the air..! So what are you waiting for.....!!!";}
+}
+
+function set()
+{
+f.name1.value="";
+f.name2.value="";
+f.name3.value="";
+}
+
+
+
+
+function cardvalidation(f)
+{
+	if (f.bname.value=="")
+	{
+		alert("Please enter the name of the bank before submitting. Thanks!");
+		f.bname.focus(); 
+	}
+	else
+	{ 
+		if((f.bname.value=="ICICI")|(f.bname.value=="icici")|(f.bname.value=="HDFC")|(f.bname.value=="hdfc")|(f.bname.value=="SBI")|(f.bname.value=="sbi"))
+		{
+			if(f.cno.value=="")
+			{
+				alert ("Please Enter atleast the fake credit card number if not the real one");
+				f.cno.focus();
+			}
+			else
+			{
+				a=window.open("","window1","toolbar=no,menubar=no,status=no,size=2");
+				a.document.write("<center><h2>Welcome to the world of gambling <h1>" + f.nam.value + " !</h1></h2></center>");
+				a.document.bgColor="#aaffdd";
+				a.document.write("<center><a href=gambling.htm>Click here to Play</a></center>");
+			}
+   		}
+		else
+		{
+			alert ("Sorry! We do not deal with this bank. But you Please Keep enjoying our other features. Thanks!");
+		}
+  	}
+}
+
+function constamount(f)
+{
+	alert(" Sorry! You can not change this amount. This is the price you have to pay to dare");
+	f.amt.value="Rs    100";
+}
+
+</script>
+
+
+
+</head>
+<body bgcolor="#ffffff" bgproperties=fixed onload="moveheart()">
+
+<img id=divheart1 Style="Position:Absolute; Top:420; Left:180; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart2 Style="Position:Absolute; Top:520; Left:00; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart3 Style="Position:Absolute; Top:200; Left:290; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart4 Style="Position:Absolute; Top:0; Left:320; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart5 Style="Position:Absolute; Top:330; Left:310; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart6 Style="Position:Absolute; Top:390; Left:280; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart7 Style="Position:Absolute; Top:470; Left:320; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart8 Style="Position:Absolute; Top:410; Left:285; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<img id=divheart9 Style="Position:Absolute; Top:510; Left:120; z-index:-1; Width:20; Height:20; Align:center" src="heartbeat.gif" width="100%" height="100%" border="0">
+
+<div style="position:absolute;left:70;top:150;z-index=-2;">
+<a href="#gambleblock"><font size="4pt">Gambling</font></a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#message"><font size="4pt">Message</font></a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="lovecalc.htm"><font size="4pt">HeartBeat</font></a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="#flameblock"><font size="4pt">Flame</font></a>
+</div>
+
+
+<div id="marque" style="position:absolute;top:652;left:510"><h1><marquee style="font-family:wingdings;" behavior="alternate" scrolldelay="50" width="75">E</marquee></h1></div>
+
+
+<div id="message" style="position:absolute;top:290;left:30;z-index:-2;">
+<center><br><br><br><font face=papyrus size=5 color="#ff33300"><b>Message Corner</b></font></center><br>
+<table bgcolor= "#cfffcf" BORDER="1" width=100%><tr><td align=center><br>
+Write message for your dear one and watch it get displayed on our site...!!</font><br><br>
+Message &nbsp&nbsp<textarea rows="4" cols="15"></textarea>&nbsp&nbsp
+from&nbsp&nbsp
+<input type="text" value="">
+<br><br>
+<center><input type="button" value="submit"></center></td></tr></table>
+</div>
+
+<div id="#flameblock" style="position:absolute;top:600;left:30;z-index:-2;">
+<center><br><br><br><font face=papyrus size=5 color="#ff33300"><b>FLAME Speaks For You</b></font></center><br>
+
+<table bgcolor= "#cfffcf" BORDER="1" width=100%><tr><td align=center>
+<form name="f"><br><center>Enter the names to be matched and watch FLAMES reply..<br>&nbsp<br></center>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Enter Your Name :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="name1" value=""><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnter name to be matched with :&nbsp&nbsp&nbsp<input type="text" name="name2" value=""><br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<textarea name="name3" rows="4" cols="30" value="" disabled></textarea>
+<br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="button" name="but" value="flame" onclick="flame(this.form)">&nbsp<input type="button" name="reset" value="Reset" onclick="set(this.form)">
+</center>
+</form></td></tr></table>
+</div>
+
+
+<div id="gambleblock" style="position:absolute;top:1050;left:30;z-index:-2;"><center><br><br><br>
+<font face=papyrus size=5 color="#ff33300"><b>Only For The Daring Ones</b></font></center>
+<form name="f1">
+<center>
+<table border=1 bgcolor= "#cfffcf" width=100%><tr>
+<td align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName</td><td align="right"><input type="text" name="nam" value="" size=20></td>
+<td rowspan=3 align=center><br><input type="button" name="but1" value="submit" onclick="cardvalidation(this.form)" style="height:150;width:45" ></td></tr>
+
+<tr><td align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIssuing bank</td><td align="right"><input type="text" name="bname" value="" size=10></td>
+<tr><td align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCredit Card Number</td><td align="right"><input type="text" name="cno" value="" size=10></td></tr>
+<tr><td align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAmount</td><td align="right"><input type="text" name="amt" value="Rs     100" size=10 onchange="constamount(this.form)" disabled>
+</td></tr>
+</table>
+</form>
+<br><br><br><br><br><br>
+</div>
+</body>
+</html>
+

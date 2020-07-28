@@ -1,0 +1,73 @@
+<html>
+<head><title> Register</title>
+
+<script language = "JavaScript">
+var flag=0;
+function h()
+{
+	document.location.replace("homepage.htm");
+}
+
+function chek()
+{
+	var u="";
+	el=document.forms[0].elements.length;
+	for(j=0;j<el;j++)
+	{
+		u=document.forms[0].elements[j].value;
+		l_u=u.length;
+		for(i=0;i<l_u;i++)
+		{
+			if((u.substring(i,i+1)=="%") || (u.substring(i,i+1)=="?") || 							(u.substring(i,i+1)=="+") || (u.substring(i,i+1)=="~") || 										(u.substring(i,i+1)==";") || (u.substring(i,i+1)=="*") || 							(u.substring(i,i+1)=="#") || (u.substring(i,i+1)=="\""))
+			{
+				flag=1;
+				document.forms[0].elements[j].value="";
+				u="";
+			}
+		}
+	}
+	if(!flag)
+	{
+		document.forms[0].submit();
+	}
+	else
+	{
+		alert("Your entry contains certain characters that are not allowed. Please Refresh the form.");
+	}
+}
+
+</script>      
+</head>
+<body bgcolor="#33bb98"><center>
+<br>
+<h1 id=h1head style="position:absolute;color:red;top:15;left:200;filter:glow(color=#fab9c1,strength=10);font-family:ravie;font-size=45;align:center;z-index:1" >Registration  Form</H1>
+<br><br><br><br>
+
+<form action="http:\\127.0.0.1\exam\register_users.pl" method="post">
+<table border="0" width=450 height=220>
+<tr>
+<td><b><font color=yellow size=4 >User_Id  :</font></b></td><td><input type=text  name="u_id" size=25 maxlength=40 ></td>
+</tr><tr>
+<td><b><font color=yellow size=4pt >Name     :</font></b></td><td><input type=text  name="nam" size=25 maxlength=40 ></td>
+</tr>
+<tr>
+<td><b><font color=yellow size=4pt >Subject  :</font></b></td><td><select name="sub" style="width:188;"><option value="iq" selected>IQ Test</option><option value="java">Java</option><option value="oracle">Oracle</option></select></td>
+</tr><tr>
+<td><b><font color=yellow size=4 >E-mail    :</font></b></td><td><input type=text  name="e_id" size=25  maxlength=40 ></td>
+</tr><tr>
+<td><b><font color=yellow size=4 >Mailing Address :</font></b></td><td><input type=text  name="m_add" size=25 maxlength=75 ></td>
+</tr><tr><td>&nbsp</td><td>&nbsp</td></tr><tr><td colspan=2><center>TERMS AND CONDITIONS</center></td></tr><tr><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td colspan=2><center><b>1. One registration is valid for only one examination </b></center></td></tr>
+<tr><td colspan=2><center><b>2. The result/certificate will be mailed at your mailing address.</b></center></td></tr>
+<tr><td colspan=2><center><b>3. Please fill the form as per the given instructions.</b></center></td></tr><tr><td>&nbsp</td><td>&nbsp</td></tr><tr>
+<td><center><input type=button name="dis" value=DisAgree onclick="h()"></center></td>
+<td><center><input type=button name="agr" value=Agree onclick="chek()"></center></td>
+</tr>
+</table>
+</form>
+</center>
+<div style="position:absolute;top:120;left:570;">
+<table border=1 frame=box><tr><td>Please do not use characters<br> like (; " / ? < > \ % + &<br> ^ # * ! ~ | ') while filling <br> the form. These characters<br> may disrupt the functioning.<br> Thanks!</td></tr></table>
+</body>
+</html>
+

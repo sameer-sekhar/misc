@@ -1,0 +1,188 @@
+<html><head></head>
+<body bgcolor=#cafcbb  topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" rightmargin="0"  >
+
+<script language="JavaScript">
+
+if (document.all)
+{
+	msg= new Array("B","R","A","I","N","W","O","R","L","D",".","C","O","M");
+	document.write('<div id="starsDiv" style="position:absolute;top:0px;left:0px">')
+	for (xy=0;xy<14;xy++)
+	{
+				document.write('<div style="position:relative; width:6px; height:6px; 				font-size:10px;color:red;visibility:visible">');
+		document.write(msg[xy]);
+		document.write('</div>');
+	}
+	document.write('</div>')
+}
+
+if (document.layers)
+{
+	window.captureEvents(Event.MOUSEMOVE);
+}
+
+var yBase = 200;
+var xBase = 200;
+var yAmpl = 10;
+var yMax = 40;
+var step = .2;
+var ystep = .5;
+var currStep = 0;
+var tAmpl=1;
+var Xpos = 1;
+var Ypos = 1;
+var i = 0;
+var j = 0;
+
+if (document.all)
+{
+           function MoveHandler()
+            {
+	  Xpos = document.body.scrollLeft+event.x;
+	  Ypos = document.body.scrollTop+event.y;
+            }
+         document.onmousemove = MoveHandler; 
+}
+else if (document.layers)
+{
+	  function xMoveHandler(evnt)
+	{
+		  Xpos = evnt.pageX;
+		  Ypos = evnt.pageY;
+	  }
+	  window.onMouseMove = xMoveHandler;
+}
+
+
+function animateLogo() 
+{
+	if (document.all)
+	{
+		 yBase = window.document.body.offsetHeight/4;
+		 xBase = window.document.body.offsetWidth/4;
+	}
+	else if (document.layers)
+	{
+		 yBase = window.innerHeight/4 ;
+		 xBase = window.innerWidth/4;
+	}
+
+	if (document.all)
+	{
+		var totaldivs=document.all.starsDiv.all.length
+		 for ( i = 0 ; i < totaldivs ; i++ )
+		 {
+			var tempdiv=document.all.starsDiv.all[i].style
+			  tempdiv.top = Ypos + Math.cos((20*Math.sin(currStep/20))+i*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10);
+			  tempdiv.left = Xpos + Math.sin((20*Math.sin(currStep/20))+i*70)*xBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + i*25)/10);
+		 }
+	}
+	else if (document.layers)
+	{
+		 for ( j = 0 ; j < 7 ; j++ ) 
+		 {
+			var templayer="a"+j
+			  document.layers[templayer].top = Ypos + Math.cos((20*Math.sin(currStep/20))+j*70)*yBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+			  document.layers[templayer].left =Xpos + Math.sin((20*Math.sin(currStep/20))+j*70)*xBase*(Math.sin(10+currStep/10)+0.2)*Math.cos((currStep + j*25)/10);
+		 }
+	}
+
+	currStep += step;
+	setTimeout("animateLogo()", 15);
+}
+
+animateLogo();
+
+</script>
+
+<script language="JavaScript">
+TMonth = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+  TDay = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+  TDate = new Date();
+  CurDay = TDate.getDay();
+  CurMonth = TDate.getMonth();
+  Month = TMonth[CurMonth];
+  Day = TDay[CurDay];
+  NDay = TDate.getDate();
+  CurYear = TDate.getYear();
+  Year = "" + CurYear;
+
+
+</script>     
+
+<div style="position:absolute;left:620;top:10;"><table  border=0 bgcolor=#a93311>
+ <tr align="right"> 
+    <td width="100%" height="2"><font size="-2" color=yellow face="MS Sans Serif, Arial, Verdana"> 
+      <script language="JavaScript">
+  document.write(Day);
+  document.write(", ");
+  document.write(Month);
+  document.write(" ");
+  document.write(NDay);
+  document.write(", ");
+  document.write("2001");
+
+</script>
+      &nbsp; </font></td>
+  </tr>
+</table></div>
+
+
+<div style="position:absolute;top:15;left:380;z-index:-1;"><img src="brain.gif" width=400 height=410></div>
+
+<div style="position:absolute;top:15;left:65;z-index:-1;"><img src="flower25.gif" width=75 height=80></div>
+
+<div style="position:absolute;top:110;"> <hr color="black"></div>
+
+<div style="position:absolute;left:2;top:140;z-index=-1;"><table  border=1 frame=void bgcolor="yellow">
+<tr ><td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http:\\127.0.0.1\exam\marksheet.pl" title="View Your Result"><font size="4pt">Result</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sample.htm" title="Sample Test"><font size="4pt">Sample</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="strategy.htm" title="See Our Strategy"><font size="4pt">Strategy</font></a>&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="examtips.htm" title="Vital Tips"><font size="4pt">Exam Tips</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="aboutus.htm" title="About The Makers Of The Site"><font size="4pt">AboutUs</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr></table>
+
+<table border=1 frame=void>
+<tr>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;To  view  	your&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;certificate click &nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp;on <a href="http:\\127.0.0.1\exam\marksheet.pl" title="View your Certificate">Result</a></td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;Click on <a href="sample.htm" title="Sample test">Sample</a> to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp; give a Sample&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp; test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;Click on <a href="strategy.htm" title="strategy of the site">Strategy</a> to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;know the purpose and<br> &nbsp;&nbsp;&nbsp;process of the site.  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;Important <a href ="examtips.htm" title="Vital tips"> Tips</a> that&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;can help you in <br>&nbsp;&nbsp;&nbsp;&nbsp;the  exam .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;About the makers<br> &nbsp;&nbsp;&nbsp;&nbsp;of the site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+
+</table></div>
+
+<div style="position:absolute;left:20;top:270;z-index=-1;"><form method=post action="http:\\127.0.0.1\exam\login1.pl"><table border=0 bgcolor="#ffccbb">
+<tr><td><font color=black><b>Login_Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp :&nbsp&nbsp</b></font></td><td><input type=text name="uid" value="" size=15></td></tr>
+<tr><td ><font color=black><b>Registration_No :&nbsp</b></font></td><td><input type=password name="rno" value="" size=15></td></tr>
+<tr><td colspan=2 ><center><input type=submit value=Login></center></td></tr>
+</table></form></div>
+
+<div style="position=absolute;top:270;left:300;z-index=-1;"><font face="Tempus Sans ITC" size="5pt"><b>&nbsp&nbsp<a href="help1.htm" title="Forgot User Id or Registration Number">Trouble <br> Signing   In</a></b></font></div>
+
+<div style="position=absolute;top:270;left:480;z-index=-1;"><table border=0 bgcolor="#ffccbb"><tr><td><a href="register1.htm " title="Click Here For New Registration "><font face="Tempus Sans ITC" size="6pt"><b>New Registration</b></font></a><br><font face="Tempus Sans ITC" size="4pt"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTo Test Your  Brain<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRegister Now   !</b></font> </td></tr></table></div>
+
+
+  <div  style="position=absolute;top:415;left:70;"> <font face="arial" size="1" color=#a93311><b> This site 
+        is best viewed in Internet Explorer 4.0+   and   Netscape Navigator 4.0 + 
+        with a screen resolution of 800x600 and above. </b></font> </div>
+<div style="position=absolute;top:390;">
+<hr>
+<p><h5><font color=#a93311><center>Copyright : BRAINWORLD International<sup style= "font-size:15pt">&copy;</sup><bR>BOKARO STEEL CITY<BR>JHARKHAND<br>INDIA</center></font></h5></div>
+
+<div style="position:absolute;left:2;top:370;z-index=-1;"><table  border=1 frame=void bgcolor="yellow">
+<tr ><td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http:\\127.0.0.1\exam\marksheet.pl"><font size="4pt">Result</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="sample.htm"><font size="4pt">Sample</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="strategy.htm"><font size="4pt">Strategy</font></a>&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="examtips.htm"><font size="4pt">Exam Tips</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td  border=1 frame=rhs>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="aboutus.htm"><font size="4pt">AboutUs</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr></table>
+
+
+
+</body>
+</html>

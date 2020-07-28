@@ -1,0 +1,360 @@
+<html><head>
+
+<script language="JavaScript">
+
+function start_movement()
+ {
+	setInterval("snowfall1()",5);
+	setInterval("snowfall2()",20);
+	setInterval("snowfall3()",70);
+}
+
+function snowfall1()
+{
+	
+	s3.style.top=parseInt(s3.style.top)+1;
+	s5.style.top=parseInt(s5.style.top)+1;
+
+	s9.style.top=parseInt(s9.style.top)+1;
+	s12.style.top=parseInt(s12.style.top)+1;
+	s13.style.top=parseInt(s13.style.top)+1;
+	s14.style.top=parseInt(s14.style.top)+1;
+	
+	s18.style.top=parseInt(s18.style.top)+1;
+	
+	if(parseInt(s3.style.top)>300)
+		s3.style.top=-10;
+	if(parseInt(s5.style.top)>300)
+		s5.style.top=-5;
+	
+	if(parseInt(s9.style.top)>300)
+		s9.style.top=-10;
+	if(parseInt(s12.style.top)>300)
+		s12.style.top=-5;
+	if(parseInt(s14.style.top)>300)
+		s14.style.top=-10;
+	
+	if(parseInt(s18.style.top)>300)
+		s18.style.top=-5;
+	if(parseInt(s13.style.top)>300)
+		s13.style.top=-10;
+}
+
+function snowfall2()
+{
+	s02.style.top=parseInt(s02.style.top)+1;
+	
+	s6.style.top=parseInt(s6.style.top)+1;
+	s8.style.top=parseInt(s8.style.top)+1;
+	
+	s11.style.top=parseInt(s11.style.top)+1;
+	s15.style.top=parseInt(s15.style.top)+1;
+	s17.style.top=parseInt(s17.style.top)+1;
+
+	
+	if(parseInt(s02.style.top)>300)
+		s02.style.top=-10;
+	
+	if(parseInt(s6.style.top)>300)
+		s6.style.top=-5;
+	if(parseInt(s8.style.top)>300)
+		s8.style.top=-10;
+	
+	if(parseInt(s11.style.top)>300)
+		s11.style.top=-5;
+	if(parseInt(s15.style.top)>300)
+		s15.style.top=-10;
+	if(parseInt(s17.style.top)>300)
+		s17.style.top=-5;
+	
+
+
+}
+
+function snowfall3()
+{
+	s01.style.top=parseInt(s01.style.top)+1;	
+	s4.style.top=parseInt(s4.style.top)+1;
+	s7.style.top=parseInt(s7.style.top)+1;
+	s10.style.top=parseInt(s10.style.top)+1;	
+	s16.style.top=parseInt(s16.style.top)+1;
+	s19.style.top=parseInt(s19.style.top)+1;
+
+	if(parseInt(s01.style.top)>300)
+		s01.style.top=-10;	
+	if(parseInt(s4.style.top)>300)
+		s4.style.top=-5;
+	if(parseInt(s7.style.top)>300)
+		s7.style.top=-10;
+	if(parseInt(s10.style.top)>300)
+		s10.style.top=-5;
+	if(parseInt(s16.style.top)>300)
+		s16.style.top=-10;
+	if(parseInt(s19.style.top)>300)
+		s19.style.top=-5;
+	
+}
+</script>
+
+<script language="JavaScript">
+
+function initial()
+{
+	Name1.value="";
+	Name2.value="";
+	result.value="";
+	start_movement();
+}
+
+function check()
+{
+	if ((Name1.value=="") || (Name2.value==""))
+	{
+		alert("All the entries have not been made");
+	}
+	else
+	{
+		lovcalc();
+	}
+}
+
+function refresh()
+{
+	Name1.value="";
+	Name2.value="";
+	result.value="";
+	document.applets[0].refresh(0);
+	n1.style.color="#ffffff";
+	n2.style.color="#ffffff";
+	n3.style.color="#ffffff";
+	n4.style.color="#ffffff";
+	n5.style.color="#ffffff";
+}
+
+function lovcalc()
+{
+var i=0;
+var s1="";
+var s2="";
+var str="";
+var a1=new Array();
+var a2= new Array();
+var t= new Array();
+s1=Name1.value;
+s2="loves"+Name2.value;
+s1=s1.toLowerCase();
+s2=s2.toLowerCase();
+
+while(i<s1.length)
+{
+	var j=0;
+	var flag=0;
+	
+	while(j<s2.length)
+	{
+		if(s1.substring(i,i+1)==s2.substring(j,j+1))
+		{
+			var x1=s1.substring(0,i);
+			var y1=s1.substring(i+1);
+			s1=x1+y1;
+			var x2=s2.substring(0,j);
+			var y2=s2.substring(j+1);
+ 			s2=x2+y2;
+			flag=1;
+			break;
+		}
+		j++;
+	}
+	if(flag==0)
+	{
+		i++;
+	}
+}
+
+
+a1.length=s1.length;
+a2.length=s2.length;
+
+for(m=0;m<s1.length;m++)
+{
+	a1[m]=1;
+}
+
+for(n=0;n<s2.length;n++)
+{
+	a2[n]=1;
+}
+
+if(a2.length >= a1.length)
+{
+	var z=a2.length;
+	z1=a1.length;
+	a1.length=z;
+	for(p1=z1;p1<z;p1++)
+	{
+		a1[p1]=0;
+	}	
+
+	str="";
+	for(p=0;p<z;p++)
+	{
+		var temp=parseInt(a2[z-1-p]) + parseInt(a1[p]);
+		str=str+temp;
+	}
+
+}
+else
+{
+	var z=a1.length;
+	z1=a2.length;
+	a1.length=z;	
+	for(p1=z1;p1<z;p1++)
+	{
+		a2[p1]=0;
+	}
+	str="";	
+	for(p=0;p<z;p++)
+	{
+		temp=parseInt(a1[z-1-p]) + parseInt(a2[p]);
+		str=str+temp;
+	}
+
+}
+
+
+while(str.length > 2)
+{
+	l=str.length;
+
+
+	for(len=0;len<l;len++)
+	{
+		t[len]=str.substring(len,len+1);
+	}
+
+	for(q=0;q<parseInt(l/2);q++)
+	{
+		t[q]= parseInt(t[q]) + parseInt(t[l-1-q]);
+	}
+
+	if((l % 2)==1)
+	{
+		t.length=(l+1)/2;
+	}
+	else
+	{
+		t.length=parseInt(l/2);
+	}
+
+	str="";
+	for(r=0;r<t.length;r++)
+	{
+		str=str + t[r];
+	}
+}
+document.applets[0].begin(str);
+str=str + "%";
+result.value=str;
+n1.style.color="black";
+n2.style.color="black";
+n3.style.color="black";
+n4.style.color="black";
+n5.style.color="black";
+}
+
+</script>
+
+<script language="javascript" src="snow.js">
+</script>
+
+</head>
+<body bgcolor="white" onload="initial()">
+
+
+<div id=s01 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:100;left:100;background:red;visibility:visible;"></div>
+
+<div id=s02 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:20;left:300;background:red;visibility:visible;"></div>
+
+<div id=s3 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:90;left:230;background:red;visibility:visible;"></div>
+
+<div id=s4 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:30;left:300;background:red;visibility:visible;"></div>
+
+<div id=s5 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:70;left:490;background:red;visibility:visible;"></div>
+
+<div id=s6 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:10;left:510;background:red;visibility:visible;"></div>
+
+<div id=s7 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:40;left:330;background:red;visibility:visible;"></div>
+
+<div id=s8 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:50;left:250;background:red;visibility:visible;"></div>
+
+<div id=s9 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:80;left:270;background:red;visibility:visible;"></div>
+
+<div id=s10 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:460;left:20;background:red;visibility:visible;"></div>
+
+<div id=s11 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:100;left:0;background:red;visibility:visible;"></div>
+
+<div id=s12 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:20;left:440;background:red;visibility:visible;"></div>
+
+<div id=s13 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:90;left:490;background:red;visibility:visible;"></div>
+
+<div id=s14 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:30;left:421;background:red;visibility:visible;"></div>
+
+<div id=s15 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:70;left:490;background:red;visibility:visible;"></div>
+
+<div id=s16 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:10;left:500;background:red;visibility:visible;"></div>
+
+<div id=s17 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:40;left:310;background:red;visibility:visible;"></div>
+
+<div id=s18 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:50;left:40;background:red;visibility:visible;"></div>
+
+<div id=s19 style="position:absolute;width:3px;height:3px;font-size:1px;
+top:80;left:80;background:red;visibility:visible;"></div>
+
+<div style="position:absolute;top:10;left:230;font-size:24">
+ L<img src="heartbeat.gif" width="20" height="20">ve Meter
+</div>
+
+<div style="position:absolute;top:55;left:60;font-size:14">
+<font color=black>
+Name  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp<input type="text" name="Name1" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Spouse name&nbsp&nbsp&nbsp&nbsp :&nbsp&nbsp<input type="text" name="Name2" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt"><br><br>
+Compatibility &nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp<input type="text" name="result" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt" disabled>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" value="Compatibility" onclick="check()" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="button" value="Refresh" onclick="refresh()" style="width:87;HEIGHT: 22px;background:#64a8ae;color:black;font-size:7pt">
+</font>
+</div>
+
+<div id="n1" style="position:absolute;height:4px;width:4px;top:145;left:293;background:#ffffff;color:#ffffff;">50
+</div>
+<div id="n2" style="position:absolute;height:4px;width:4px;top:280;left:430;background:#ffffff;color:#ffffff;">100
+</div>
+<div id="n3" style="position:absolute;height:4px;width:4px;top:280;left:150;background:#ffffff;color:#ffffff;;">0
+</div>
+<div id="n4" style="position:absolute;height:4px;width:4px;top:190;left:430;background:#ffffff;color:#ffffff;">75
+</div>
+<div id="n5" style="position:absolute;height:4px;width:4px;top:190;left:155;background:#ffffff;color:#ffffff;">25
+</div>
+
+<div style="position:absolute;top:170;left:170;">
+<applet code="LoveMeter" width=250 height=200 style="z-index:-2;"></applet>
+</div>
+</body></html>

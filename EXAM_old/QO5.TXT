@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. The default menu is provided by Oracle forms<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbut the user, using the menu editor, must<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp create the ___________  menu  .<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q5" value="0">Master<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q5" value="1">Custom<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q5" value="2">Detail<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q5" value="3">None of the above
+</span>
+

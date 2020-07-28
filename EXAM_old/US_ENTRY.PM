@@ -1,0 +1,9 @@
+$entrystruct=a50a50a15a50a255a10;
+$u_id=0;
+$nam=1;
+$sub=2;
+$e_id=3;
+$m_add=4;
+$reg_no=5;
+$total_elements=6;
+$rec_size=430;

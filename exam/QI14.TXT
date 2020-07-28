@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. The mother of Suresh is the only daughter <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspof Seema's father .How Seema is <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsprelated to Suresh ?<br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;left:150;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q14" value="0">Sister<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q14" value="1">Mother<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q14" value="2">Aunt<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q14" value="3">Data inadequate
+</span>
+

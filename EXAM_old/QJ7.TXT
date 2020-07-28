@@ -1,0 +1,15 @@
+<span style="font-family:Palatino Linotype;font-size:20pt;
+		color:brown;">
+
+.. Protected Modifier attached to member<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp of a class : <br></span>
+<br><br>
+	
+<span style="font-family:MS Serif;font-size:15pt;
+		color:green;">
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa.<input type=radio name="q7 value="0">Allows to access it from any class in the same package .<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb.<input type=radio name="q7" value="1">Allows to access it from any class outside the package. <br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc.<input type=radio name="q7" value="2">Allows to access it from a subclass outside the same package .<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspd.<input type=radio name="q7" value="3">( a )  &  ( c )
+</span>
+
